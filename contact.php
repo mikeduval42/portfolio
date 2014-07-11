@@ -18,17 +18,17 @@ if ($_POST) {
 	}
 
 	//check $_POST vars are set, exit if any missing
-	if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userHuman"]) || !isset($_POST["userMessage"]))
-	{
-		$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>Input fields are empty!</span>'));
-		die($output);
-	}
+	// if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userHuman"]) || !isset($_POST["userMessage"]))
+	// {
+	// 	$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>Input fields are empty!</span>'));
+	// 	die($output);
+	// }
 
 
 	//Sanitize input data using PHP filter_var().
 	$user_Name        = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
 	$user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
-	$user_Human       = filter_var($_POST["userHuman"], FILTER_SANITIZE_STRING);
+	// $user_Human       = filter_var($_POST["userHuman"], FILTER_SANITIZE_STRING);
 	$user_Message     = filter_var($_POST["userMessage"], FILTER_SANITIZE_STRING);
 
 
@@ -51,11 +51,11 @@ if ($_POST) {
 		$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>Please enter a valid email!</span>'));
 		die($output);
 	}
-	if (!is_numeric($user_Human) || $user_Human !== '7') //check entered data is numbers
-	{
-		$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>The captcha value is incorrect.</span>'));
-		die($output);
-	}
+	// if (!is_numeric($user_Human) || $user_Human !== '7') //check entered data is numbers
+	// {
+	// 	$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>The captcha value is incorrect.</span>'));
+	// 	die($output);
+	// }
 		if(strlen($user_Message)<5) //check emtpy message
 	{
 		$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>Too short message! Please enter something.</span>'));
