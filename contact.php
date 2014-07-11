@@ -1,8 +1,8 @@
 <?php
 
 if ($_POST) {
-	$to_Email       = 'mikeduval42@gmail.com'; //Replace with recipient email address
-	$subject        = 'Message from Mike Duval Portfolio'; //Subject line for emails
+	$to_Email       = "mikeduval42@gmail.com"; //Replace with recipient email address
+	$subject        = 'Message from your website'; //Subject line for emails
 
 	//check if its an ajax request, exit if not
 	if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -17,7 +17,7 @@ if ($_POST) {
 		die($output);
 	}
 
-	check $_POST vars are set, exit if any missing
+	//check $_POST vars are set, exit if any missing
 	if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userHuman"]) || !isset($_POST["userMessage"]))
 	{
 		$output = json_encode(array('type'=>'error', 'text' => '<i class="fa fa-exclamation-circle fa-2x"></i><span>Input fields are empty!</span>'));
