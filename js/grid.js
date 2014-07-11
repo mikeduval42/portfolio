@@ -197,7 +197,7 @@ var Grid = (function() {
 		};
 
 	function init( config ) {
-		
+
 		// the settings..
 		settings = $.extend( true, {}, settings, config );
 
@@ -246,16 +246,16 @@ var Grid = (function() {
 	}
 
 	function initEvents() {
-		
+
 		// when clicking an item, show the preview with the item´s info and large image.
 		// close the item if already expanded.
 		// also close if clicking on the item´s cross
 		initItemsEvents( $items );
-		
+
 		// on window resize get the window´s size again
 		// reset some values..
 		$window.on( 'debouncedresize', function() {
-			
+
 			scrollExtra = 0;
 			previewPos = -1;
 			// save item´s offset
@@ -321,7 +321,7 @@ var Grid = (function() {
 				preview.update( $item );
 				return false;
 			}
-			
+
 		}
 
 		// update previewPos
@@ -353,8 +353,8 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<div id="prevdesc" class="preview-description"></div>' );
-			this.$iconCategory = $( '<i class="fa fa-folder-o"></i>' );
-			this.$iconDate = $( '<i class="fa fa-calendar"></i>' );
+			// this.$iconCategory = $( '<i class="fa fa-folder-o"></i>' );
+			// this.$iconDate = $( '<i class="fa fa-calendar"></i>' );
 			this.$category = $( '<span class="preview-category"></span>' );
 			this.$date = $( '<span class="preview-date"></span>' );
 			this.$meta = $( '<div class="preview-meta"></div>' ).append( this.$iconCategory, this.$category, this.$iconDate, this.$date );
@@ -378,7 +378,7 @@ var Grid = (function() {
 			if( $item ) {
 				this.$item = $item;
 			}
-			
+
 			// if already expanded remove class "og-expanded" from current item and add it to new item
 			if( current !== -1 ) {
 				var $currentItem = $items.eq( current );
@@ -409,7 +409,7 @@ var Grid = (function() {
 			this.$date.html( eldata.date );
 
 			var self = this;
-			
+
 			// remove the current image in the preview
 			if( typeof self.$largeImg != 'undefined' ) {
 				self.$largeImg.remove();
@@ -427,13 +427,13 @@ var Grid = (function() {
 						self.$largeImg = $img.fadeIn( 350 );
 						self.$fullimage.append( self.$largeImg );
 					}
-				} ).attr( 'src', eldata.largesrc );	
+				} ).attr( 'src', eldata.largesrc );
 			}
 
 		},
 		open : function() {
 
-			setTimeout( $.proxy( function() {	
+			setTimeout( $.proxy( function() {
 				// set the height for the preview and the item
 				this.setHeights();
 				// scroll to position the preview in the right place
@@ -467,7 +467,7 @@ var Grid = (function() {
 				}
 
 			}, this ), 25 );
-			
+
 			return false;
 
 		},
@@ -513,7 +513,7 @@ var Grid = (function() {
 			var position = this.$item.data( 'offsetTop' ),
 				previewOffsetT = this.$previewEl.offset().top - scrollExtra,
 				scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
-			
+
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
 
 		},
@@ -526,7 +526,7 @@ var Grid = (function() {
 		}
 	}
 
-	return { 
+	return {
 		init : init,
 		addItems : addItems
 	};

@@ -2717,9 +2717,9 @@ input[type="button"].btn-block {
 .glyphicon-plane:before {
   content: "\e108";
 }
-.glyphicon-calendar:before {
+/*.glyphicon-calendar:before {
   content: "\e109";
-}
+}*/
 .glyphicon-random:before {
   content: "\e110";
 }
@@ -2741,12 +2741,12 @@ input[type="button"].btn-block {
 .glyphicon-shopping-cart:before {
   content: "\e116";
 }
-.glyphicon-folder-close:before {
+/*.glyphicon-folder-close:before {
   content: "\e117";
 }
 .glyphicon-folder-open:before {
   content: "\e118";
-}
+}*/
 .glyphicon-resize-vertical:before {
   content: "\e119";
 }
