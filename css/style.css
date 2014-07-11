@@ -850,7 +850,7 @@ a:hover {
   -moz-animation: loader 0.5s infinite ease-in-out both;
   animation: loader 0.5s infinite ease-in-out both;
 }
-.preview-meta {
+/*.preview-meta {
   color: #aca494;
   margin-bottom: 20px;
 }
@@ -864,7 +864,7 @@ a:hover {
 .preview-meta i {
   margin-right: 8px;
   font-size: 0.875em;
-}
+}*/
 @-webkit-keyframes loader {
   0% {
     background: #ddd;
