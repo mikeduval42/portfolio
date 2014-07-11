@@ -1,7 +1,7 @@
 <?php
 
 if ($_POST) {
-	$to_Email       = 'mikeduval42@gmail.com'; //Replace with recipient email address
+	$to_Email       = "mikeduval42@gmail.com"; //Replace with recipient email address
 	$subject        = 'Message from your website'; //Subject line for emails
 
 	//check if its an ajax request, exit if not
