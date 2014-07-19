@@ -358,7 +358,7 @@ var Grid = (function() {
 			this.$category = $( '<span class="preview-category"></span>' );
 			this.$date = $( '<span class="preview-date"></span>' );
 			this.$meta = $( '<div class="preview-meta"></div>' ).append( this.$iconCategory, this.$category, this.$iconDate, this.$date );
-			this.$href = $( '<a class="btn btn-medium btn-outline btn-darkblue" href="#">Read more</a>' );
+			this.$href = $( '<a class="btn btn-medium btn-outline btn-darkblue" href="https://encinofarmersmarket.herokuapp.com">Visit site</a>' );
 			this.$details = $( '<div class="col-sm-5 og-details"></div>' ).append( this.$title, this.$meta, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="col-sm-7 og-fullimg"></div>' ).append( this.$loading );
