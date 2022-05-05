@@ -1101,7 +1101,7 @@ a:hover {
   height: auto;
   margin: 0 auto;
   position: relative;
-  border: 5px solid #32425a;
+  border: 10px solid #32425a;
 }
 .team-member .profile-picture .profile-overlay {
   height: 94%;
