@@ -1067,6 +1067,7 @@ a:hover {
   text-align: center;
   padding: 120px 0;
   position: relative;
+  border-bottom: 10px solid #32425a;
 
 }
 .team-section .special-heading {
