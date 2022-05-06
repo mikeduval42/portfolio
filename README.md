@@ -11,9 +11,6 @@ Using LaunchDarkly's JS SDK I have implemented the LaunchDarkly company logo on 
  - Selecting an environment and which SDK you would like to utilize
  - Creating a new feature flag... I created a feature flag titled LD-Logo
  - If you're creating a new application from scratch, the dashboard will guide you through tagging your site and adding the necessary JS. However, since we're setting up the app I created we can skip this step.
-   - For a JS SDK, I had to do the following:
-     - Add the LauncDarkly SDK script to the head tag
-	 - Add the provided scipt within the body tag<br>
 	 
 ### Modifying sample app<br>
 Now that we've cloned the sample app repo and gotten the initial setup done within LaunchDarkly's dashboard, it's time to modify the sample app for your LaunchDarkly account. This will include replacing the SDK key and replacing the feature flag
@@ -50,5 +47,5 @@ For my implementation I wanted to only show the LaunchDarkly logo to certain use
 6) Click Review and Save<br>
 7)W ithin my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
 
-To test the true targeting visit <a href="https://mikeduval42-homework.herokuapp.com/"> here </a>.
-To test the false targeting visit <a href="https://mikeduval42-homework.herokuapp.com/false.html"> here </a>.
+To test the true targeting visit <a href="https://mikeduval42-homework.herokuapp.com/"> here </a>. The LaunchDarkly logo <i>is</i> present since the user is Bob Loblaw.<br><br>
+To test the false targeting visit <a href="https://mikeduval42-homework.herokuapp.com/false.html"> here </a>. The LaunchDarkly logo <i>is not</i> present since the user is Mike False.
