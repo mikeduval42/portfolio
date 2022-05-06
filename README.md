@@ -4,7 +4,7 @@ This was my personal portfolio page that I created after I completed my Web Deve
 
 Using LaunchDarkly's JS SDK I have implemented the LaunchDarkly company logo on the welcome section of the site. This image will be dispalyed or hidden to specific users using a LaunchDarkly feature flag (LD-Logo).
 
-#### Steps to setup sample implementation:<br>
+### Steps to setup sample implementation:<br>
 1) Clone this repo to your machine or your own github repo<br>
 2) Sign up with a free LaunchDarkly account <a href="https://app.launchdarkly.com/signup">here<a/><br>
 3) Once you have signed up for a free account follow the instructions to get started. This will include:
@@ -15,10 +15,10 @@ Using LaunchDarkly's JS SDK I have implemented the LaunchDarkly company logo on 
      - Add the LauncDarkly SDK script to the head tag
 	 - Add the provided scipt within the body tag<br>
 	 
-#### Modifying sample app<br>
+### Modifying sample app<br>
 Now that we've cloned the sample app repo and gotten the initial setup done within LaunchDarkly's dashboard, it's time to modify the sample app for your LaunchDarkly account. This will include replacing the SDK key and replacing the feature flag
 
-##### Replacing the SDK key
+#### Replacing the SDK key
 Within the index.html and false.html files you will want to replace my SDK key with your own key that was generated during the intial LaunchDarkly setup. 
 
 To access your key use the following path int he LaunchDarkly dashboard: Account Settings - Projects - Select desired project - copy the Client-side SDK Key
@@ -26,7 +26,7 @@ To access your key use the following path int he LaunchDarkly dashboard: Account
 Within the index.html and false.html you'll want to replace the below key with the one you just copied.
 ![image](https://user-images.githubusercontent.com/6074369/167158796-84a2f0dc-380a-4812-b74c-bf0a7c49d448.png)
 
-#####Replacing the Feature Flag
+#### Replacing the Feature Flag
 Within the index.html and false.html files you will want to replace the feature flag with your own feature flag.
 
 Within the dashboard go to Feature-flags and copy the name of the feature flag you created during your intial setup.
@@ -35,7 +35,7 @@ In the index.html and false.html you'll want to replace the below feature flag n
 ![image](https://user-images.githubusercontent.com/6074369/167159628-2c6b67f6-8241-44e8-819c-d294c8b6693e.png)
 
 
-#####Deploying app
+#### Deploying app
 Lastly, we'll want to deploy our app (for mine I used heroku), and you will want to ensure that the feature flag was successfully being read and tracked by LaunchDarkly<br>
 
 
