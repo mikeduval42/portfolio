@@ -48,4 +48,7 @@ For my implementation I wanted to only show the LaunchDarkly logo to certain use
 7) Within my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
 
 To test the true targeting visit <a href="https://mikeduval42-homework.herokuapp.com/"> here </a>. The LaunchDarkly logo <i>is</i> present since the user is Bob Loblaw.<br><br>
+![image](https://user-images.githubusercontent.com/6074369/167179171-b512f297-d7fb-4993-8ae1-6cd64054b2ee.png)
+
 To test the false targeting visit <a href="https://mikeduval42-homework.herokuapp.com/false.html"> here </a>. The LaunchDarkly logo <i>is not</i> present since the user is Mike False.
+![image](https://user-images.githubusercontent.com/6074369/167179316-c0cc9cda-13f4-4082-932b-53b9f65dc7bc.png)
