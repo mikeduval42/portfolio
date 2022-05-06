@@ -37,7 +37,7 @@ Lastly, we'll want to deploy our app (for mine I used heroku), and you will want
 
 
 #### Bonus points
-For my implementation I wanted to only show the LaunchDarkly logo to certain users. To set this up I did the following:
+For my implementation I wanted to only show the LaunchDarkly logo to certain users using the products targeting feature. To set this up I did the following:
 
 1) Within the LaunchDarkly dashboard, select Feature Flags - LD-Logo<br>
 2) Toggle targeting on for the flag<br>
@@ -45,7 +45,7 @@ For my implementation I wanted to only show the LaunchDarkly logo to certain use
 4) Under "true" assign the users (ie. Bob Loblaw) that you want to see the logo<br>
 5) Under "false" assign the users (ie. Mike False) that you do not want to see the logo<br>
 6) Click Review and Save<br>
-7)W ithin my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
+7) Within my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
 
 To test the true targeting visit <a href="https://mikeduval42-homework.herokuapp.com/"> here </a>. The LaunchDarkly logo <i>is</i> present since the user is Bob Loblaw.<br><br>
 To test the false targeting visit <a href="https://mikeduval42-homework.herokuapp.com/false.html"> here </a>. The LaunchDarkly logo <i>is not</i> present since the user is Mike False.
