@@ -5,9 +5,9 @@ This was my personal portfolio page that I created after I completed my Web Deve
 Using LaunchDarkly's JS SDK I have implemented the LaunchDarkly company logo on the welcome section of the site. This image will be dispalyed or hidden to specific users using a LaunchDarkly feature flag (LD-Logo).
 
 #### Steps to setup sample implementation:<br>
-1)Clone this repo to your machine or your own github repo<br>
-2)Sign up with a free LaunchDarkly account <a href="https://app.launchdarkly.com/signup">here<a/><br>
-3)Once you have signed up for a free account follow the instructions to get started. This will include:
+1) Clone this repo to your machine or your own github repo<br>
+2) Sign up with a free LaunchDarkly account <a href="https://app.launchdarkly.com/signup">here<a/><br>
+3) Once you have signed up for a free account follow the instructions to get started. This will include:
  - Selecting an environment and which SDK you would like to utilize
  - Creating a new feature flag... I created a feature flag titled LD-Logo
  - If you're creating a new application from scratch, the dashboard will guide you through tagging your site and adding the necessary JS. However, since we're setting up the app I created we can skip this step.
@@ -42,13 +42,13 @@ Lastly, we'll want to deploy our app (for mine I used heroku), and you will want
 #### Bonus points
 For my implementation I wanted to only show the LaunchDarkly logo to certain users. To set this up I did the following:
 
-1)Within the LaunchDarkly dashboard, select Feature Flags - LD-Logo<br>
-2)Toggle targeting on for the flag<br>
-3)Select the Targeting tab - Individual targeting<br>
-4)Under "true" assign the users (ie. Bob Loblaw) that you want to see the logo<br>
-5)Under "false" assign the users (ie. Mike False) that you do not want to see the logo<br>
-6)Click Review and Save<br>
-7)Within my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
+1) Within the LaunchDarkly dashboard, select Feature Flags - LD-Logo<br>
+2) Toggle targeting on for the flag<br>
+3) Select the Targeting tab - Individual targeting<br>
+4) Under "true" assign the users (ie. Bob Loblaw) that you want to see the logo<br>
+5) Under "false" assign the users (ie. Mike False) that you do not want to see the logo<br>
+6) Click Review and Save<br>
+7)W ithin my app, I wrote some simple JS that checks the flagValue and to hide or show the LaunchDarkly logo on my app<br>
 
 To test the true targeting visit <a href="https://mikeduval42-homework.herokuapp.com/"> here </a>.
 To test the false targeting visit <a href="https://mikeduval42-homework.herokuapp.com/false.html"> here </a>.
