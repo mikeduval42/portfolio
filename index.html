@@ -24,8 +24,10 @@
       // Set up the user properties. This user should appear on your LaunchDarkly users dashboard
       // soon after you run the demo.
       var user = {
-        name: 'Bob Loblaw',
-        key: 'example-user-key',
+        //name: 'Bob Loblaw',
+        //key: 'example-user-key',
+		 key: "anon",
+		 anonymous: True,
       };
 
       var div = document.createElement('div');
@@ -41,6 +43,12 @@
         var label = (flagValue ? 'Showing' : 'Not showing') + ' your feature to ' + user.key;
         console.log("SDK successfully connected! The value of LD-Logo is " + flagValue + " for " + user.key)
         div.replaceChild(document.createTextNode(label), div.firstChild);
+		  function toggle(){
+			var x = document.getElementByID("ld-logo");
+			if (flagValue = false) {
+				
+				x.style.display="none";}
+		  }
       }
 
       ldclient.on('ready', render);
