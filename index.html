@@ -41,12 +41,12 @@
         var label = (flagValue ? 'Showing' : 'Not showing') + ' your feature to ' + user.key;
         console.log("SDK successfully connected! The value of LD-Logo is " + flagValue + " for " + user.key)
         div.replaceChild(document.createTextNode(label), div.firstChild);
-		  function toggle(){
-			var x = document.getElementByID("ld-logo");
-			if (flagValue == false) {
-				
-				x.style.display="none";}
-		  }
+
+		var x = document.getElementByID("ld-logo");
+		if (flagValue == false) {
+			x.style.display="none";
+			}
+
       }
 
       ldclient.on('ready', render);
